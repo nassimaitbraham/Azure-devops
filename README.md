@@ -4,7 +4,7 @@
 <h2>2 - Création d'un azure container registry</h2>
     nas@Azure:~$ az acr create --resource-group aitechContainerRegistryRg --name aitechContainerRegistry --sku Basic<br/><br/>
 <h2>3 - Attacher un ACR à cluster AKS</h2>
-   nas@Azure:~$az aks update -n myAKSCluster -g kubernetes --attach-acr aitechContainerRegistryRg<br/>
+   nas@Azure:~$az aks update -n myAKSCluster -g kubernetes --attach-acr aitechContainerRegistry<br/>
 <h2>4 - Lier le compte devops au compte azure</h2>
     URL : https://dev.azure.com/<br/><br/>
     a - {Organisation} -> {ProjetName} -> Settings -> Service connections -> New service connection -> Azure Resource Manager -> Service principal (automatic) -> New Azure service         connection<br/>
