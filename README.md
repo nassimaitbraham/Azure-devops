@@ -5,13 +5,13 @@
     nas@Azure:~$ az acr create --resource-group aitechContainerRegistryRg --name aitechContainerRegistry --sku Basic<br/><br/>
 <h2>3 - Attacher un ACR à cluster AKS</h2>
    nas@Azure:~$az aks update -n myAKSCluster -g myResourceGroup --attach-acr aitechContainerRegistryRg<br/>
-<h2>3 - Lier le compte devops au compte azure</h2>
+<h2>4 - Lier le compte devops au compte azure</h2>
     URL : https://dev.azure.com/<br/><br/>
     a - {Organisation} -> {ProjetName} -> Settings -> Service connections -> New service connection -> Azure Resource Manager -> Service principal (automatic) -> New Azure service         connection<br/>
     b- Suivre les étapes d'authenfication (Compte azure) après l'ouverture de la pop up <br/>
     c- Rensigner le champs : Service connection name (ex : aitechdevops)<br/>
     d- Cliquer sur save<br/><br/>
- <h2>4- Lier le compte devops à azure container registry</h2>
+ <h2>5- Lier le compte devops à azure container registry</h2>
     URL : https://dev.azure.com/<br/><br/>
     a - {Organisation} -> {ProjetName} -> Settings -> Service connections -> New service connection -> Docker Registry -> Azure Container Registry<br/>
     b- Suivre les étapes d'authenfication (Compte azure) après l'ouverture de la pop up<br/> 
@@ -27,7 +27,7 @@
   
   ![Azure_container_registry](https://user-images.githubusercontent.com/5339905/129710018-1e2b36ab-70c7-46c6-896d-c5af3dda40a3.jpg)
 
-  <h2>2 - Dockerfile</h2> 
+  <h2>s2 - Dockerfile</h2> 
   
   ![Azure_container_registry](https://user-images.githubusercontent.com/5339905/129710267-f6380686-1c72-4ede-92a0-5efec13aea5c.jpg)
 
